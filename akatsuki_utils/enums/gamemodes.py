@@ -4,9 +4,9 @@ from enum import IntEnum
 
 
 class GameMode(IntEnum):
-    STANDARD = 0
+    OSU = 0
     TAIKO = 1
-    CTB = 2
+    FRUITS = 2
     MANIA = 3
 
 
