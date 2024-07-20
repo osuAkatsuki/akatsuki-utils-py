@@ -6,7 +6,7 @@ class GameMode(IntEnum):
     CTB = 2
     MANIA = 3
 
-class SubMode(IntEnum):
+class AkatsukiMode(IntEnum):
     VANILLA = 0
     RELAX = 1
     AUTOPILOT = 2
