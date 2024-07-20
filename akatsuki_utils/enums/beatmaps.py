@@ -22,7 +22,7 @@ class RankedStatus(IntEnum):
         }.get(self)
 
     @classmethod
-    def from_osu_api(cls, osu_api_status: int) -> "RankedStatus":
+    def from_osu_api(cls, osu_api_status: int) -> RankedStatus:
         return {
             -2: cls.PENDING,  # graveyard
             -1: cls.PENDING,  # wip
@@ -34,7 +34,7 @@ class RankedStatus(IntEnum):
         }.get(osu_api_status, cls.UPDATE_AVAILABLE)
 
     @classmethod
-    def from_direct(cls, direct_status: int) -> "RankedStatus":
+    def from_direct(cls, direct_status: int) -> RankedStatus:
         return {
             0: cls.RANKED,
             2: cls.PENDING,
